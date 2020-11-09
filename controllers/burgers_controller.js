@@ -13,4 +13,13 @@ router.get('/index', function(req, res) {
 });
 
 //API Routes
+router.get('/api/burgers', async function(req, res) {
+  try {
+    const burgers = await Burger.selectAll();
+    res.status(200).json({data: burgers});
+  } catch(err) {
+    res.status(500).json(err);
+  }
+});
+
 module.exports = router;
