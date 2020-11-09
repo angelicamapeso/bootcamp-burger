@@ -12,4 +12,5 @@ router.get('/index', function(req, res) {
   res.send('Load index page.');
 });
 
+//API Routes
 module.exports = router;
