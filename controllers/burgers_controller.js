@@ -22,4 +22,14 @@ router.get('/api/burgers', async function(req, res) {
   }
 });
 
+router.post('/api/burgers', async function(req, res) {
+  try {
+    const burger = new Burger(req.body);
+    await burger.insertBurger();
+    res.status(201).json(burger);
+  } catch(err) {
+    res.status(500).json(err);
+  }
+});
+
 module.exports = router;
