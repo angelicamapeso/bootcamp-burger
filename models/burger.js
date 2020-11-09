@@ -1,7 +1,7 @@
 const orm = require('../config/orm');
 
 class Burger {
-  constructor(burger_name, devoured = false) {
+  constructor({burger_name, devoured = false}) {
     if (burger_name.length <= 75) {
       this.burger_name = burger_name;
     } else {
