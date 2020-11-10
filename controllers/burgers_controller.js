@@ -44,7 +44,7 @@ router.put('/api/burgers/:id', async function(req, res) {
   burger.devoured = req.body.devoured;
 
   try {
-    await burger.updateBurger(burger.id);
+    await burger.save();
     res.status(200).json({data: burger});
   } catch(err) {
     res.status(500).json(err);
