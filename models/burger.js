@@ -23,6 +23,7 @@ class Burger {
   }
 
   async updateBurger() {
+    this.devoured = fixBool(this.devoured);
     return await orm.updateOne('burgers', this, {id: this.id});
   }
 
