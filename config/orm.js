@@ -21,6 +21,10 @@ const orm = {
         identifier
       ]);
     return result;
+  },
+  findById: async (tableName, id) => {
+    const [rows] = await connection.query('SELECT * FROM ?? WHERE ?', [tableName, {id}]);
+    return rows.length ? rows : null;
   }
 }
 
