@@ -1,3 +1,4 @@
+//Devour button functionality
 document.querySelectorAll('.devour').forEach(button => {
   button.addEventListener('click', function(event) {
     const id = this.parentElement.getAttribute('data-id');
