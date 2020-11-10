@@ -27,8 +27,8 @@ class Burger {
     return await orm.insertOne('burgers', this);
   }
 
-  async updateBurger(id) {
-    return await orm.updateOne('burgers', this, {id});
+  async updateBurger() {
+    return await orm.updateOne('burgers', this, {id: this.id});
   }
 
   static async selectAll() {
