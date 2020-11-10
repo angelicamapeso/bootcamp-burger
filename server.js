@@ -7,6 +7,10 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+//Set up app with handlebars template engine
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
+
 //Handle routes with burger controller
 app.use(require('./controllers/burgers_controller'));
 
