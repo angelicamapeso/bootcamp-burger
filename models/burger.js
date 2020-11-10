@@ -47,6 +47,8 @@ class Burger {
 function fixBool(newBool) {
   switch(newBool) {
     case 'true':
+    case '1':
+    case 1:
       return true;
     default:
       return false;
