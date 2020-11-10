@@ -13,3 +13,19 @@ document.querySelectorAll('.devour').forEach(button => {
     });
   });
 });
+
+//Add new burger
+document.getElementById('add-burger').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const newBurger = {
+    burger_name: document.getElementById('burger-name').value.trim(),
+  }
+
+  fetch(`/api/burgers`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(newBurger),
+  }).then(response => {
+    if (response.ok) location.reload();
+  });
+});
