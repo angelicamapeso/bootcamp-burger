@@ -26,6 +26,18 @@ class Burger {
   static async selectAll() {
     return await orm.selectAll('burgers');
   }
+
+  static async findBurger(id) {
+    const rows = await orm.findById('burgers', id);
+
+    let burger = null;
+    if (rows) {
+      burger = new Burger(rows[0]);
+      burger.id = id;
+    }
+
+    return burger;
+  }
 }
 
 module.exports = Burger;
