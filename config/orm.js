@@ -6,7 +6,7 @@ const orm = {
     return rows;
   },
   insertOne: async (tableName, data) => {
-    const result = await connection.query('INSERT INTO ?? SET ?',
+    const [result] = await connection.query('INSERT INTO ?? SET ?',
       [
         tableName,
         data
