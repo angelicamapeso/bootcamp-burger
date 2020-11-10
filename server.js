@@ -3,6 +3,9 @@ const exphbs = require('express-handlebars');
 
 const app = express();
 
+//Enable use of browser-side css and js
+app.use(express.static('public'))
+
 //Handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
