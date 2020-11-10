@@ -48,4 +48,13 @@ class Burger {
   }
 }
 
+function fixBool(newBool) {
+  switch(newBool) {
+    case 'true':
+      return true;
+    default:
+      return false;
+  }
+}
+
 module.exports = Burger;
