@@ -8,8 +8,9 @@ router.get('/', function(req, res) {
   res.redirect('/index');
 });
 
-router.get('/index', function(req, res) {
-  res.send('Load index page.');
+router.get('/index', async function(req, res) {
+  const burgers = await Burger.selectAll();
+  res.render('index', {burgers});
 });
 
 //API Routes
