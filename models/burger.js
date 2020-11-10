@@ -10,11 +10,6 @@ class Burger {
     this.devoured = devoured;
   }
 
-  updateDevoured() {
-    this.devoured = !this.devoured;
-    return this;
-  }
-
   async save() {
     if (this.id) {
       return await this.updateBurger()
