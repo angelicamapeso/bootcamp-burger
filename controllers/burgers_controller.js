@@ -30,7 +30,7 @@ router.post('/api/burgers', async function(req, res) {
 
     burger.id = result.insertId;
 
-    res.status(201).json(burger);
+    res.status(201).json({data: burger});
   } catch(err) {
     res.status(500).json(err);
   }
