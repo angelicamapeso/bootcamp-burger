@@ -26,7 +26,10 @@ router.get('/api/burgers', async function(req, res) {
 router.post('/api/burgers', async function(req, res) {
   try {
     const burger = new Burger(req.body);
-    await burger.insertBurger();
+    const result = await burger.save();
+
+    burger.id = result.insertId;
+
     res.status(201).json(burger);
   } catch(err) {
     res.status(500).json(err);
