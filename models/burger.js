@@ -15,6 +15,14 @@ class Burger {
     return this;
   }
 
+  async save() {
+    if (this.id) {
+      return await this.updateBurger()
+    } else {
+      return await this.insertBurger();
+    }
+  }
+
   async insertBurger() {
     return await orm.insertOne('burgers', this);
   }
