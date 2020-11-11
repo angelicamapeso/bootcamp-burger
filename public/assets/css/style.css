@@ -69,3 +69,14 @@ li {
 #burger-title {
   color: #BC6F35;
 }
+
+/* Form */
+#submit-burger {
+  background-color: #4A371A;
+  color: white;
+}
+
+#submit-burger:hover,
+#submit-burger:focus {
+  background-color: #6F4220;
+}
