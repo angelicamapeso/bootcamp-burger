@@ -27,6 +27,10 @@ class Burger {
     return await orm.updateOne('burgers', this, {id: this.id});
   }
 
+  async deleteBurger() {
+    return await orm.deleteOne('burgers', {id: this.id});
+  }
+
   static async selectAll() {
     return await orm.selectAll('burgers');
   }
