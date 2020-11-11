@@ -59,3 +59,11 @@ li {
   padding: 1rem;
   border-radius: 10px;
 }
+
+/* Title */
+#title {
+  line-height: 80%;
+}
+#burger-title {
+  color: #BC6F35;
+}
