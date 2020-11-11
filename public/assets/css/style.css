@@ -43,13 +43,13 @@ h1 {
 .h1 {
   font-weight: 600;
 }
-label, small, p, .devour {
+label, small, p, .devour, .delete {
   font-size: 1.1em;
   font-weight: 500;
 }
 
 /*List items*/
-ul, .devour {
+ul, .devour, .delete {
   padding: 0;
   text-transform: uppercase;
   font-weight: 600;
@@ -82,14 +82,21 @@ li {
 }
 
 /*li buttons*/
-.devour {
-  border-left: 1px solid #4A3D1A;
+.devour, .delete {
   padding-left: 1rem;
-  color: #4A3D1A;
   border-radius: 0;
 }
-
-.devour:hover, 
-.devour:focus {
+.devour:hover,
+.devour:focus,
+.delete:hover,
+.delete:focus  {
   color: #BC6F35;
+}
+.devour {
+  color: #4A3D1A;
+  border-left: 1px solid #4A3D1A;
+}
+.delete {
+  color: #4A1A1A;
+  border-left: 1px solid #4A1A1A;
 }
