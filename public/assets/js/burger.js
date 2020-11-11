@@ -30,6 +30,7 @@ document.getElementById('add-burger').addEventListener('submit', function(event)
   });
 });
 
+//Delete burgers
 document.querySelectorAll('.delete').forEach(button => {
   button.addEventListener('click', function(event) {
     const id = this.parentElement.getAttribute('data-id');
