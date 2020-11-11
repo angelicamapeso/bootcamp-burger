@@ -14,3 +14,13 @@ body {
   background-color: #FBF5E4;
   color: #4A371A;
 }
+
+#to-devour-list {
+  background-color: #FFD89C;
+  color: #4A3D1A;
+}
+
+#devoured-list {
+  background-color: #FF9494;
+  color: #4A1A1A;
+}
