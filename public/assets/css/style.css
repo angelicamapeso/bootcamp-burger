@@ -38,3 +38,10 @@ h1, h2 {
 label, small, p {
   font-weight: 500;
 }
+
+/*List items*/
+ul {
+  padding-left: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+}
