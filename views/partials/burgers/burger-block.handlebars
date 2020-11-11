@@ -1,4 +1,5 @@
 <li data-id="{{id}}" {{#unless was-devoured}}data-newdevoured="true"{{/unless}} class="d-flex align-items-center">
+  <i class="fas {{#if was-devoured}}fa-grin-hearts{{else}}fa-hamburger{{/if}} mr-3"></i>
   {{burger_name}}
   {{#unless was-devoured}}
   <button class="devour">Devour!</button>
