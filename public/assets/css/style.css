@@ -18,6 +18,7 @@ body {
   background-color: #FBF5E4;
   color: #4A371A;
   font-family: 'Rajdhani', sans-serif;
+  font-size: 1.2rem;
 }
 
 #to-devour-list {
@@ -34,6 +35,9 @@ body {
 h1, h2 {
   text-transform: uppercase;
   font-weight: 600;
+}
+h1 {
+  font-size: 3em;
 }
 .h1 {
   font-weight: 600;
