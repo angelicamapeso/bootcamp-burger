@@ -44,7 +44,7 @@ label, small, p {
 
 /*List items*/
 ul {
-  padding: 1rem;
+  padding: 0;
   text-transform: uppercase;
   font-weight: 600;
 }
