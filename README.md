@@ -2,7 +2,7 @@
 
 ![Burger logger preview](./img/burger-logger-preview.png)
 
-:link: Not yet deployed
+:link: [Go to the Burger Logger](https://fast-oasis-01993.herokuapp.com/index)
 
 A burger logger, which tracks the burgers you want to eat or have eaten.
 
