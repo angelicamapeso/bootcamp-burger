@@ -29,3 +29,12 @@ body {
   background-color: #FF9494;
   color: #4A1A1A;
 }
+
+/* Text */
+h1, h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+label, small, p {
+  font-weight: 500;
+}
