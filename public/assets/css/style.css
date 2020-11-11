@@ -45,3 +45,10 @@ ul {
   text-transform: uppercase;
   font-weight: 600;
 }
+li {
+  background-color: rgba(255,255,255,0.5);
+  list-style-type: none;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+}
