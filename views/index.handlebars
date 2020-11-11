@@ -22,8 +22,8 @@
   </header>
   <!--Main-->
   <main class="row">
-    <div class="col">
-      <h2>Burgers To Be Devoured</h2>
+    <div id="to-devour-list" class="col p-3">
+      <h2 class="text-center">Burgers To Be Devoured</h2>
       <ul>
         {{#each burgers}}
         {{#unless devoured}}
@@ -36,8 +36,8 @@
         {{/each}}
       </ul>
     </div>
-    <div class="col">
-      <h2>Burgers Devoured</h2>
+    <div id="devoured-list" class="col p-3">
+      <h2 class="text-center">Burgers Devoured</h2>
       <ul>
         {{#each burgers}}
         {{#if devoured}}
