@@ -43,13 +43,13 @@ h1 {
 .h1 {
   font-weight: 600;
 }
-label, small, p {
+label, small, p, .devour {
   font-size: 1.1em;
   font-weight: 500;
 }
 
 /*List items*/
-ul {
+ul, .devour {
   padding: 0;
   text-transform: uppercase;
   font-weight: 600;
@@ -79,4 +79,17 @@ li {
 #submit-burger:hover,
 #submit-burger:focus {
   background-color: #6F4220;
+}
+
+/*li buttons*/
+.devour {
+  border-left: 1px solid #4A3D1A;
+  padding-left: 1rem;
+  color: #4A3D1A;
+  border-radius: 0;
+}
+
+.devour:hover, 
+.devour:focus {
+  color: #BC6F35;
 }
