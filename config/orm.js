@@ -22,6 +22,13 @@ const orm = {
       ]);
     return result;
   },
+  deleteOne: async (tableName, identifier) => {
+    const result = await connection.query('DELETE FROM ?? WHERE ?',
+    [
+      tableName,
+      identifier
+    ]);
+  },
   findById: async (tableName, id) => {
     const [rows] = await connection.query('SELECT * FROM ?? WHERE ?', [tableName, {id}]);
     return rows.length ? rows : null;
