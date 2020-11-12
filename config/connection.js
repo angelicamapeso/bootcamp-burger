@@ -13,6 +13,10 @@ try {
       database: 'burgers_db',
     });
   }
+
+  connection.connect(function(err) {
+    if (err) throw err;
+  });
 } catch(err) {
   console.error(err);
   process.exit(1);
