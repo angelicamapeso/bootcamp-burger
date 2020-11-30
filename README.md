@@ -1,7 +1,9 @@
 # Bootcamp - Homework 11: Eat Da Burger
 
-![Burger logger preview](./img/burger-logger-preview.png)
-![Burger logger preview](./img/burger-logger-mobile.png)
+<p align="middle">
+  <img src="./img/burger-logger-preview.png" width="70%">
+  <img src="./img/burger-logger-mobile.png" width="23%">
+</p>
 
 :link: [Go to the Burger Logger](https://fast-oasis-01993.herokuapp.com/index)
 
