@@ -1,6 +1,7 @@
 # Bootcamp - Homework 11: Eat Da Burger
 
 ![Burger logger preview](./img/burger-logger-preview.png)
+![Burger logger preview](./img/burger-logger-mobile.png)
 
 :link: [Go to the Burger Logger](https://fast-oasis-01993.herokuapp.com/index)
 
