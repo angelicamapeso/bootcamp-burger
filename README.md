@@ -1,4 +1,4 @@
-# Bootcamp - Homework 11: Eat Da Burger
+# Eat Da Burger
 
 <p align="middle">
   <img src="./img/burger-logger-preview.png" width="70%">
@@ -38,5 +38,3 @@ This assignment is practice for working in the front-end and the back-end by per
 ## License
 
 This project is licensed under the **MIT License**.
-
-This homework assignment is part of the [Carleton University Coding Bootcamp](https://bootcamp.carleton.ca/).
